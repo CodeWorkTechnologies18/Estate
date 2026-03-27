@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fb;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+section[id] {
+  scroll-margin-top: 110px;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-space {
+  @apply py-20 lg:py-24;
+}
+
+.section-kicker {
+  @apply mb-4 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-accentDark;
+}
+
+.section-kicker-dark {
+  @apply border-white/10 bg-white/10 text-accent;
+}
+
+.section-title {
+  @apply font-heading text-3xl font-bold leading-tight text-primary sm:text-4xl lg:text-5xl;
+}
+
+.section-title-dark {
+  @apply text-white;
+}
+
+.section-copy {
+  @apply text-base leading-7 text-slate-600 sm:text-lg;
+}
+
+.section-copy-dark {
+  @apply text-slate-200;
+}
+
+.premium-card {
+  @apply rounded-[28px] border border-slate-200/70 bg-white/95 p-6 shadow-premium backdrop-blur-sm transition duration-300;
+}
+
+.premium-button {
+  @apply inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-primary transition duration-300 hover:-translate-y-1 hover:bg-accentDark hover:text-white;
+}
+
+.premium-button-outline {
+  @apply inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-white hover:text-primary;
+}
